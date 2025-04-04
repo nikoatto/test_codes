@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *,
+        ::before,
+        ::after {
+            box-sizing: border-box;
+            border-style: solid;
+            border-width: 0;
+            min-width: 0;
+            margin: 0;
+        }
+
+        .main {
+            width: calc(100% - 40px);
+            height: auto;
+            background: #d0d0d0;
+            position: relative;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .main__inner {
+            width: 100%;
+            max-width: 200px;
+            margin: 0 auto;
+            height: 500px;
+            background: #c0c0c0;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <p>親</p>
+        <div class="main__inner">
+            <p>子</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
